@@ -4,14 +4,18 @@ console.log(info);
 
 
 
+//var city= document.getElementById('city');
+
 
 btn.onclick = function(e){
     fetch('https://api.openweathermap.org/data/2.5/weather?q=gainesville&appid=716182205ced012435f707c12bb5f9f7&units=imperial')
+    //fetch('https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=716182205ced012435f707c12bb5f9f7&units=imperial')
     .then(function(res){
     return res.json()
     })
     .then(function(data){
     console.log(data)
+    console.log(city);
 
     var div= document.createElement('div');
     var h3= document.createElement('h3');
@@ -30,6 +34,11 @@ btn.onclick = function(e){
     info.appendChild(divP);
 
     //3. Icon image for current weather conditions
+
+    var img= document.createElement('img')
+    img.src= data.weather[0].icon;
+    div.appendChild(img);
+
     //var divI= document.createElement('divI');
     //var weatherIcon= document.createElement('weatherIcon');
 
