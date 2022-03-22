@@ -11,9 +11,14 @@
 </head>
 <body>
   <header>
-    <h1>Weather Widget</h1>
+    <h1>Current Weather</h1>
   </header>
-  <main>
+
+    <form>
+      <input type="text" placeholder="Search for a city" autofocus>
+      <button>SUBMIT</button>
+      <main class="msg"></main>
+    </form>
 
 <!--
 1. Name of the Searched City with Country Code
@@ -25,9 +30,24 @@
 https://api.openweathermap.org/data/2.5/weather?q={city}&appid=716182205ced012435f707c12bb5f9f7&units=imperial
 api key 716182205ced012435f707c12bb5f9f7
 -->
+<!--<section class="top-banner">
+  <div class="container">
+    <h1 class="heading">Simple Weather App</h1>
+    <form>
+      <input type="text" placeholder="Search for a city" autofocus>
+      <button>SUBMIT</button>
+      <span class="msg"></span>
+    </form>
+  </div>
+</section>
+<section class="ajax-section">
+  <div class="container">
+    <ul class="cities"></ul>
+  </div>
+</section>
+-->
     
-  </main>
-
+ 
   <script src="index.js"></script>
 </body>
 </html>
