@@ -8,14 +8,14 @@ console.log(info);
 
 
 btn.onclick = function(e){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=gainesville&appid=716182205ced012435f707c12bb5f9f7&units=imperial')
-    //fetch('https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=716182205ced012435f707c12bb5f9f7&units=imperial')
+    //fetch('https://api.openweathermap.org/data/2.5/weather?q=gainesville&appid=716182205ced012435f707c12bb5f9f7&units=imperial')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+city.value+'&appid=716182205ced012435f707c12bb5f9f7&units=imperial')
     .then(function(res){
     return res.json()
     })
     .then(function(data){
     console.log(data)
-    console.log(city);
+    console.log(city.value);
 
     var div= document.createElement('div');
     var h3= document.createElement('h3');
