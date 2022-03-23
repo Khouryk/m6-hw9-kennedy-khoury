@@ -36,7 +36,7 @@ btn.onclick = function(e){
     //3. Icon image for current weather conditions
 
     var img= document.createElement('img')
-    img.src= data.weather[0].icon;
+    img.src='https://openweathermap.org/img/wn/'+ data.weather[0].icon +'@2x.png';
     div.appendChild(img);
 
     //var divI= document.createElement('divI');
@@ -44,7 +44,7 @@ btn.onclick = function(e){
 
  
     //var imgcode = data.weather[0].icon;
-    //weatherIcon= 'https://openweathermap.org/img/w/' +imgcode+ '.png';
+    //weatherIcon= 'https://openweathermap.org/img/wn/data.weather[0].icon@2x.png';
     
     //div.appendChild(weatherIcon);
     //info.appendChild(divI);
