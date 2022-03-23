@@ -24,6 +24,7 @@ btn.onclick = function(e){
     h3.textContent = data.name + ', '+ data.sys.country;
     div.appendChild(h3)
     info.appendChild(div);
+    
 
     //2. Description of current weather
     var divP= document.createElement('divP');
@@ -59,6 +60,7 @@ btn.onclick = function(e){
     })
 
     e.preventDefault();
+    info.innerHTML = '';
 
    
 
